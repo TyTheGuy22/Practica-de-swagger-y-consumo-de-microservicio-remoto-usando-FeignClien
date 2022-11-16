@@ -1,0 +1,18 @@
+#Estas configuraciones se agregan dependiendo de los servicios remotos que se utilizarán
+next:
+  datasource:
+    tomcat:
+      url: jdbc:postgresql://localhost:5433/postgres #Se requiere crear la BD
+      username: 'postgres'
+      password: 'postgres'
+
+sibamex-soporte:
+  ribbon:
+    listOfServers: https://sibamex-soporte-nesib.brmdocp.banregio.com:443/
+  uri: sibamex-soporte
+  
+  
+producto:
+  ribbon:
+    listOfServers: http://localhost:8080/
+  uri: producto
